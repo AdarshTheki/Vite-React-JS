@@ -62,4 +62,6 @@ To deploy your Vite + React project to Firebase Hosting, run the following comma
 
 This command will upload your app's files to Firebase Hosting. Once the deployment is successful, Firebase will provide you with a hosting URL where your app is now live.
 
+### `https://viteapp-26052023.web.app/`
+
 That's it! Your `Vite + React` project is now deployed and hosted on Firebase. You can access your app using the provided hosting URL. Any subsequent updates to your app can be deployed by running **firebase deploy** again.
