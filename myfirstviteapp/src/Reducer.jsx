@@ -16,6 +16,7 @@ const reducer = (state, action) => {
     ...state,
     name: action.payload.name,
     image: action.payload.image,
+    massage: action.payload.massage,
   }
   if(action.type === 'GET_SERVICES') 
   return {

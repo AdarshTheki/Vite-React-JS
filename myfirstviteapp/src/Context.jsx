@@ -3,14 +3,16 @@ import reducer from "./Reducer";
 
 const AppContext = React.createContext();
 
-const API = 'https://api.nasa.gov/planetary/apod?api_key=VbgUXm5d6CTT1AuafdGkuRpH2h3eOQM4BLg57q5Z'
+const API = 'https://kontests.net/api/v1/all'
 
 const initialState = {
   name: "",
   image: "",
   services: [],
+  massage:'',
 };
 
+// eslint-disable-next-line react/prop-types
 const AppProvider = ({ children }) => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -38,6 +40,7 @@ const AppProvider = ({ children }) => {
       payload: {
         name: "contact here",
         image: "./images/asset_3.png",
+        massage:"Welcome to our Contact Us blog! We value your feedback, questions, and suggestions. Our team is dedicated to providing exceptional customer service and ensuring your experience with us is top-notch. Whether you have a product inquiry, need assistance with an order, or simply want to share your thoughts, we're here to help. Please feel free to reach out to us through the contact information provided below. We appreciate your support and look forward to hearing from you soon!"
       },
     });
   };
@@ -69,4 +72,5 @@ const useGlobalContext = () => {
   return useContext(AppContext);
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export { AppProvider, useGlobalContext };

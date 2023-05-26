@@ -6,7 +6,7 @@ import { Button } from "../styles/Button";
 import { useGlobalContext } from "../Context";
 
 const HeroSection = () => {
-  const { name, image } = useGlobalContext();
+  const { name, image} = useGlobalContext();
 
   return (
     <Wrapper>
@@ -16,7 +16,7 @@ const HeroSection = () => {
           <h1 className='hero-heading'>{name}</h1>
           <p className='hero-para'>
             I am Adarsh Verma. A Front-End Developer and Freelancer. A Front-End
-            Developer and freelancer
+            Developer and freelancer 
           </p>
           <Button className='btn hireme-btn'>
             <NavLink to='/contact'> hire me </NavLink>
@@ -35,7 +35,7 @@ const HeroSection = () => {
 };
 
 const Wrapper = styled.section`
-  padding: 9rem 0;
+  padding: 5rem 0;
   .section-hero-data {
     display: flex;
     flex-direction: column;
