@@ -2,11 +2,13 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Services from "./Services";
+import Error from "./Error";
 import Header from "./Components/Header.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
+import GoToBtn from "./Components/GoToBtn";
 
 const App = () => {
   const theme = {
@@ -33,6 +35,7 @@ const App = () => {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle/>
+        {/* <GoToBtn/> */}
         <BrowserRouter>
           <Header />
           <Routes>
@@ -40,8 +43,10 @@ const App = () => {
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/services' element={<Services />} />
+            <Route path='/*' element={<Error />} />
           </Routes>
           <Footer />
+          <GoToBtn/>
         </BrowserRouter>
       </ThemeProvider>
     </>

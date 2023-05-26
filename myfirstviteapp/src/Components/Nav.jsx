@@ -8,12 +8,12 @@ export const Nav = styled.nav`
       list-style: none;
 
       .navbar-link {
+        font-weight: 500;
         &:link,
         &:visited {
           display: inline-block;
           text-decoration: none;
           font-size: 1.8rem;
-          // font-size: 1.5rem;
           text-transform: uppercase;
           color: ${({ theme }) => theme.colors.black};
           transition: color 0.3s linear;
@@ -34,6 +34,7 @@ export const Nav = styled.nav`
 
   .mobile-navbar-btn {
     display: none;
+    cursor: pointer;
 
     .close-outline {
       display: none;
@@ -52,7 +53,6 @@ export const Nav = styled.nav`
 
       .mobile-nav-icon {
         font-size: 4.2rem;
-        // font-size: 3rem;
         color: ${({ theme }) => theme.colors.black};
       }
     }
@@ -62,7 +62,6 @@ export const Nav = styled.nav`
       width: 100vw;
       height: 100vh;
       position: absolute;
-      // top: -25px;
       top: 0;
       left: 0;
       background-color: #fff;
@@ -84,7 +83,6 @@ export const Nav = styled.nav`
           &:link,
           &:visited {
             font-size: 4.2rem;
-            // font-size: 2rem;
           }
 
           &:hover,
@@ -98,10 +96,9 @@ export const Nav = styled.nav`
     .active .mobile-nav-icon {
       display: none;
       font-size: 4.2rem;
-      // font-size: 3rem;
       position: absolute;
-      top: 4%;
-      right: 7%;
+      top: 3%;
+      right: 6%;
       color: ${({ theme }) => theme.colors.black};
       z-index: 9999;
     }
