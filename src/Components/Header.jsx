@@ -30,7 +30,4 @@ const MainHeader = styled.header`
     height: auto;
     max-width: 170px;
   }
-  // @media (max-width: ${({ theme }) => theme.media.tab}) {
-  //   padding: 0 1.8rem;
-  // }
 `;

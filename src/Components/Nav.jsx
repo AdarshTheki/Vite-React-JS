@@ -64,7 +64,7 @@ export const Nav = styled.nav`
       position: absolute;
       top: 0;
       left: 0;
-      background-color: #fff;
+      background-color: lightgray;
 
       display: flex;
       gap: 5rem;
@@ -96,7 +96,7 @@ export const Nav = styled.nav`
     .active .mobile-nav-icon {
       display: none;
       font-size: 4.2rem;
-      position: absolute;
+      position: fixed;
       top: 3%;
       right: 6%;
       color: ${({ theme }) => theme.colors.black};
